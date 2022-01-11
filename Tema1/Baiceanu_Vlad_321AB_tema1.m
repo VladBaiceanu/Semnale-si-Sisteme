@@ -45,12 +45,12 @@ plot(rasp_perm,'color','r');
 plot(rasp_tran,'color','b');
 hold off
 
-rasp_liber = initial(ss_ci(P_tan), x0, t);
+rasp_libr = initial(ss_ci(P_tan), x0, t);
 rasp_fort = rasp_tot - rasp_libr;
 
 f3 = figure('Name','rasp_liber rasp_fort','NumberTitle','off');
 hold on
-plot(rasp_liber,'color','b');
+plot(rasp_libr,'color','b');
 plot(rasp_fort,'color','m'); 
 hold off
 
